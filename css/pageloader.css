@@ -1,0 +1,297 @@
+/*----------------------------------------------------------------------
+Page loader CSS BY HighHay
+
+USAGE:
+------
+- Add this as an external CSS file and put it before other css links inside
+html file
+- Add the following tag inside HTML file :
+<div class='page-loader'>
+    <div><i class='fa fa-spinner  fa-spin'></i><p>loading</p></div>
+</div>
+------------------------------------------------------------------------*/
+.page-loader {
+  position: fixed;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #8b8b8b;
+  background: #ffffff;
+  display: block; }
+
+.page-loader .fa {
+  font-size: 2.5rem; }
+
+.page-loader,
+.page-loader.visible {
+  transition: 0.6s;
+  opacity: 1;
+  visibility: visible; }
+
+.page-loader.p-hidden {
+  visibility: hidden;
+  opacity: 0; }
+
+.page-loader div {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  display: block;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.page-loader div .icon {
+  position: absolute;
+  display: inline-block;
+  margin-left: -40px;
+  margin-top: -40px;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  content: "";
+  background: transparent;
+  border-radius: 100px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-bottom-color: transparent; }
+
+.page-loader div p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: currentColor;
+  letter-spacing: 1em;
+  padding-left: 1em;
+  text-transform: uppercase;
+  /*			font-family: ;*/
+  font-family: 'Montserrat', 'Roboto', 'Helvetica', sans-serif;
+  font-weight: bold; }
+
+.home-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1095;
+}
+.home-loader::before {
+    position: absolute;
+    right: -500px;
+    top: 0;
+    height: 100%;
+    width: 0;
+    content: '';
+    background-color: #e1b836;
+    -webkit-animation: mainBGAnim 2s ease-in;
+    animation: mainBGAnim 2s ease-in;
+}
+.home-loader .left {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 1096;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #e1b836;
+    -webkit-animation: loaderRightSide 2s ease-in forwards;
+    animation: loaderRightSide 2s ease-in forwards;
+}
+@-webkit-keyframes loaderLeftSide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  60% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+}
+
+@keyframes loaderLeftSide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  60% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+}
+
+@-webkit-keyframes loaderLeftSideH1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  60% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+}
+
+@keyframes loaderLeftSideH1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  60% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+}
+
+@-webkit-keyframes loaderRightSide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(1300px);
+            transform: translateX(1300px);
+  }
+}
+
+@keyframes loaderRightSide {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(1300px);
+            transform: translateX(1300px);
+  }
+}
+
+@-webkit-keyframes loaderRightSideH1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(-1300px);
+            transform: translateX(-1300px);
+  }
+}
+
+@keyframes loaderRightSideH1 {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20% {
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(-1300px);
+            transform: translateX(-1300px);
+  }
+}
+.home-loader img {
+    text-transform: uppercase;
+    font-size: 200px;
+    z-index: 1098;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;
+}
+.home-loader .left img {
+    left: -400px;
+    -webkit-animation: loaderRightSideH1 2s ease-in forwards;
+    animation: loaderRightSideH1 2s ease-in forwards;
+}
+
+.home-loader .right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    z-index: 100000000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #1d1d1d;
+    -webkit-animation: loaderLeftSide 3.5s ease-in forwards;
+    animation: loaderLeftSide 3.5s ease-in forwards;
+}
+.home-loader::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    content: '';
+    background-color: #485381;
+    -webkit-animation: mainBGAnimAfter 3s ease-in;
+    animation: mainBGAnimAfter 3s ease-in;
+}
+.home-loader .right img {
+    right: -700px;
+    -webkit-animation: loaderLeftSideH1 3.5s ease-in forwards;
+    animation: loaderLeftSideH1 3.5s ease-in forwards;
+}
+.home-loader img {
+    text-transform: uppercase;
+    font-size: 200px;
+    z-index: 10000;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;
+    width: 1000px;
+}
+@media only screen and (max-width: 992px) {
+ .home-loader img {
+      width: 550px;
+ }
+}
