@@ -322,7 +322,7 @@ section design
   height: 500px
 }
 .prime_img{
-    background-image: url(../img/images/primecollection.jpg);
+    background-image: url(../img/images/doublebowldrainboed.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   min-width: 100%;
@@ -466,10 +466,15 @@ section design
 }
 }
 
-.primecollection .collection_imgs img {
+.doublebowldrainboed .collection_imgs img {
     cursor: pointer;
     transform: rotate(180deg);
 }
-.primecollection .w3-animate-zoom img{
+.doublebowldrainboed .w3-animate-zoom img{
   transform: rotate(180deg);
+}
+
+.text-align-justify{
+  text-align: justify;
+  text-justify: inter-word;
 }
