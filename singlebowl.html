@@ -184,61 +184,10 @@
         <div class="c-wrapper width-medium">
           <div class="row">
             <div class="collection_tittle"></div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs   sr-up-3 text-center">
-                <img src="img/images/decent/1.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Elite Metallic</h4>
-              </div>
+            <div class="col col-12 col-lg-12 mb-4">
+              <div id="json-container"></div>
             </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs  sr-up-3 text-center">
-                <img src="img/images/decent/4.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Royal Metallic</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs  sr-up-3 text-center">
-                <img src="img/images/decent/2.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Iris Metallic</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs  sr-up-3 text-center">
-                <img src="img/images/decent/3.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Misty Metallic</h4>
-              </div>
-            </div>
-            <div class="section-header mt-5 align-x-center">
-              <div class="h-content width-medium">
-                <h2 class="h-title font-title sr-up-1">
-                  GRANITE    <span class="text-stroke">s e r i e s</span>
-                </h2>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs  sr-up-3 text-center">
-                <img src="img/images/decent/6.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Ferris Granite</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs  sr-up-3 text-center">
-                <img src="img/images/decent/5.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Classic Granite</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs  sr-up-3 text-center">
-                <img src="img/images/decent/7.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Saﬀron Granite</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs  sr-up-3 text-center">
-                <img src="img/images/decent/8.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Sandy Granite</h4>
-              </div>
-            </div>
+            
           </div>
         </div>
         <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
@@ -344,7 +293,26 @@
   <script src="npm/popper.js%401.14.3/dist/umd/popper.min.js"></script>
 
   <script src="js/main.js"></script>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "js/product.json", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            var jsonData = JSON.parse(xhr.responseText);
+            displayData(jsonData,0); // PRODUCT NAME
+          } else {
+            console.error("Failed to load the JSON file.");
+          }
+        }
+      };
+    
+      // Step 6: Send the request
+      xhr.send();
+    });
+    
+  </script>
 
 </body>
 

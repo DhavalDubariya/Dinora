@@ -1,0 +1,373 @@
+[
+    {
+        "product_name": "SINGLEBOWL",
+        "product_list": [
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "16 x 18",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "L 21 x 18",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "24 x 18",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "28 x 19",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "31 x 19",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "product_name": "DOUBLE BOWL",
+        "product_list": [
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "31 x 18",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "34 x 20",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "37 x 18",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "40 x 18",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "product_name": "SINGLEBOWL WITH DRAINBOARD",
+        "product_list": [
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "36 x 18",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "36 x 18",
+                "image": ""
+            },
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "40 x 20",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "product_name": "DOUBLEBOWL WITH DRAIN BOARD",
+        "product_list": [
+            {
+                "name":["METALLIC","GRANITE"],
+                "color": [
+                    {
+                        "color_name": "Charcoal Black",
+                        "color": "#1c1b21"
+                    },
+                    {
+                        "color_name": "Crystal White",
+                        "color": "#ffffff"
+                    },
+                    {
+                        "color_name": "Smoke Grey",
+                        "color": "#a9a9b6"
+                    },
+                    {
+                        "color_name": "Choco Brown",
+                        "color": "#452613"
+                    },
+                    {
+                        "color_name": "Rock Crema",
+                        "color": "#f2dcea"
+                    }
+                ],
+                "size": "16 x 18",
+                "image": ""
+            }
+        ]
+    }
+]

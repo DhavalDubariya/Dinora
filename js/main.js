@@ -188,3 +188,59 @@ function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
 }
+
+const colorPickers = document.querySelectorAll('input.head');
+
+    // Set the desired color values and disable the inputs
+    colorPickers.forEach(input => {
+      const desiredColor = input.value; // Replace this with your desired color value
+      input.value = desiredColor;
+      input.disabled = true;
+});
+
+
+
+function displayData(jsonData,productCount) {
+	var container = document.getElementById("json-container");
+	var users = jsonData[productCount].product_name;
+	var productList = jsonData[productCount].product_list
+	
+	var tableData = ''
+   
+	for (let i = 0; i < productList.length; i++) {
+	  // var row = container.append();
+	  var data = productList[i]
+	  var colorString = '<table class="table testTable" style="text-align: center;">'
+	  for(let j=0;j<data.color.length;j++){
+		colorString = colorString + `<tr>
+			<td style="border-top:0px" ><input type="color" calss="head" name="head"  value="${data.color[j].color}" disabled ></td>
+			<td style="border-top:0px"><span>${data.color[j].color_name}</span></td>
+			</tr>
+		`
+	  }
+	  colorString = colorString + '</table>'
+	  console.log(colorString)
+	  tableData = tableData + `<tr>
+					  <td><div class="collection_imgs sr-up-3 text-center"><img style="height: 100px;" src="img/images/prime/1.png" class="img-fluid mb-3" onclick="onClick(this)"></div></td>
+					  
+					  <td>${data.name}</td>
+					  <td>${data.size}</td>
+					  <td>${colorString}</td>
+					</tr>`;
+	}
+	var data2 = `<table class="table table-scrollable testTable" style="text-align: center;" >
+				  <thead>
+					<tr>
+					  <th></th>
+					
+					  <th>Finish</th>
+					  <th>Size</th>
+					  <th>Color</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					${tableData}
+				  </tbody>
+				  </table>`
+	container.innerHTML = data2;
+  }

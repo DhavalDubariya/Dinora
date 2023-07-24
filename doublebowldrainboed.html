@@ -68,29 +68,7 @@
         <span class="text t-upper fs-normal d-none d-md-inline-block">Menu</span>
       </a>
     </nav>
-    <!-- End of navbar-top -->
 
-    <!-- Begin of navbar-sidebar -->
-<!--
-    <nav class="navbar navbar-sidebar ">
-      <div class="navbar-group">
-        <div class="navbar-collapse">
-          <ul class="navbar-nav nav-menu">
-            <li class="nav-item t-upper fs-normal">
-              <a href="#about">About</a>
-            </li>
-            <li class="nav-item t-upper fs-normal">
-              <a href="#works">Works</a>
-            </li>
-            <li class="nav-item t-upper fs-normal">
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
--->
-    <!-- End of navbar-sidebar -->
 
     <!-- Begin of navfull-menu -->
     <nav id="navfull-menu" class="navfull navfull-menu navigation menu-behavior">
@@ -179,66 +157,15 @@
           </h2>
         </div>
       </div>
-
+      
       <div class=" align-x-center">
         <div class="c-wrapper width-medium">
           <div class="row">
             <div class="collection_tittle"></div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/1.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Elite Metallic</h4>
-              </div>
+            <div class="col col-12 col-lg-12 mb-4">
+              <div id="json-container"></div>
             </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/4.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Royal Metallic</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/2.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Iris Metallic</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/3.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Misty Metallic</h4>
-              </div>
-            </div>
-            <div class="section-header mt-5 align-x-center">
-              <div class="h-content width-medium">
-                <h2 class="h-title font-title sr-up-1">
-                  GRANITE    <span class="text-stroke">s e r i e s</span>
-                </h2>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/6.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Ferris Granite</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/5.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Classic Granite</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/7.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Saﬀron Granite</h4>
-              </div>
-            </div>
-            <div class="col col-12 col-lg-6 mb-4">
-              <div class="collection_imgs sr-up-3 text-center">
-                <img src="img/images/prime/8.png" class="img-fluid mb-3" onclick="onClick(this)">
-                <h4>Sandy Granite</h4>
-              </div>
-            </div>
+            
           </div>
         </div>
         <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
@@ -344,8 +271,25 @@
 
   <script src="js/main.js"></script>
 
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "js/product.json", true);
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        var jsonData = JSON.parse(xhr.responseText);
+        displayData(jsonData,3); // PRODUCT NAME
+      } else {
+        console.error("Failed to load the JSON file.");
+      }
+    }
+  };
 
+  // Step 6: Send the request
+  xhr.send();
+});
+
+  </script>
 </body>
-
-<!-- Mirrored from crossten.in/doublebowldrainboed.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 02 Apr 2023 10:27:30 GMT -->
 </html>
